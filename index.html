@@ -32,9 +32,10 @@
                 <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
             </div>
 
-            <audio id="song" autoplay="false">
-                <source autoplay="false" autostart="false" src="./audio" type="audio/mpeg">
+            <audio id="song">
+                <source src="./audio" type="audio/mpeg">
             </audio>
+
 
             <input type="range" value="0" id="progress">
 
@@ -47,11 +48,6 @@
                 <div onclick="playNext()"><i class="fa-solid fa-forward"></i></div>
 
 
-
-                <!-- 
-                <div><i class="fa-solid fa-backward"></i></div>
-                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
-                <div><i class="fa-solid fa-forward"></i></div> -->
 
             </div>
             <div>
