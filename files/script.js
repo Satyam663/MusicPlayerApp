@@ -61,10 +61,13 @@ function loadSong(index) {
 // Initialize player with the first song
 loadSong(currentSongIndex);
 
+// Initialize player with the first song
+loadSong(currentSongIndex);
+
 // Play/Pause functionality
 function playPause() {
     if (song.paused) {
-        song.play();
+        song.play(); // This starts the audio
         ctrlIcon.classList.remove("fa-play");
         ctrlIcon.classList.add("fa-pause");
     } else {
@@ -119,4 +122,10 @@ function formatTime(seconds) {
 let volumeControl = document.getElementById("volume");
 volumeControl.oninput = function () {
     song.volume = volumeControl.value;
-};
+}
+
+
+
+
+
+
